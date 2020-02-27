@@ -6,15 +6,15 @@
 
 <h1>AgregarPersonas</h1>
 
-<div>
+<div ng-app="myApp" ng-controller="myCtrl">
     <label>Name:</label>
     <input type="text" ng-model="inputNombre" placeholder="Ingresa tu nombre">
     <hr>
-    <h1>Hello {{inputNombre}}</h1>
+    <label>Edad:</label>
     <input type="text" ng-model="inputEdad" placeholder="Ingresa tu edad">
     <hr>
-    <h1>Hello {{inputEdad}}</h1>
+    <label>Mail:</label>
     <input type="text" ng-model="inputMail" placeholder="Ingresa tu Mail">
-    <hr>
-    <h1>Hello {{inputMail}}</h1>
+    <hr />
+    <input type="button"  value="InsertarPersona"/>
 </div>
