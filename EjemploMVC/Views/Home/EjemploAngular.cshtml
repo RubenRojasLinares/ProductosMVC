@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewData["Title"] = "EjemploAngular";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>EjemploAngular</h1>
+<div ng-app="myEspacio">
+    <div ng-controller="SeccionAplico">
+        <h2>hello {{helloTo.title}}</h2>
+
+    </div>
+
+</div>
+<script src="~/js/angular.min.js"></script>
+<script>
+    var app = angular.module('myEspacio', []);
+    app.controller("SeccionAplico", function ($scope) {
+        $scope.helloTo = {};
+        $scope.helloTo.title="World,AngularJS"
+    });
+    alert("ok angular")
+</script>

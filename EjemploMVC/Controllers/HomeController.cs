@@ -31,6 +31,11 @@ namespace EjemploMVC.Controllers
             return View();
         }
 
+        public IActionResult EjemploAngular()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();
